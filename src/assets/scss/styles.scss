@@ -1,14 +1,93 @@
 @font-face {
- font-family: "Big Brother";
- src: url("./../police/BigBrother.ttf");
+ font-family: "Milestone";
+ src: url("./../police/Milestone.otf");
+}
+@font-face {
+ font-family: "Coolvetica";
+ src: url("./../police/coolvetica.ttf");
+}
+body{
+	font-size: 100%;
+	box-sizing:border-box;
+	width: 100vw;
+	font-family: "Coolvetica",sans-serif;
+	background-color: #BD2F2B;
+	color:white;
 }
 .header {
-  background: gold;
+	margin-top: -3%;
   transition: 2s;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  height: 100vh;
+  width: 98vw;
+  position: relative;
   h1 {
     text-align: center;
-    font-size: 50px;
-    font-family:"Big Brother",serif;
+    font-size: 3.5em;
+    font-family:"Milestone",serif;
+    color: white;
+    margin:0;
+    margin-top:10%;
   }
+  .header__logo{
+  	width: 60vw;
+  	height: auto;
+  	animation:bounce 10s infinite;
+  	animation-delay:1s;
+  	margin-top: 12%;
+  	transform-origin:top center;
+  	box-shadow: 10px 5px 5px rgba(0,0,0,0.2);
+  	border-radius: 50%;
+  }
+  .diaporama__img
+  {
+  	width: 98vw;
+  	height: auto;
+  	margin-top: 5%;
+  }
+
+}
+@keyframes bounce{
+	from{transform:rotate(0deg);}
+	5%{transform:rotate(30deg);}
+	15%{transform:rotate(-30deg);}
+	23%{transform:rotate(0deg);}
+	to{transform:rotate(0deg);}
 }
 
+@keyframes float{
+	from{top:90vh;}
+	50%{top:92vh;}
+	to{top:90vh;}
+}
+
+hr:before, hr:after { content: ''; }
+hr {
+  border: 0;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+ &.dots {
+  border-width: 0px 0px 30px 10px;
+  border-style: solid;
+  border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,9 60.5,39.5 92.7,40.1 67,59.5 76.4,90.3 50,71.9 23.6,90.3 32.9,59.5 7.2,40.1 39.4,39.5" fill="white"/></svg>') 0% 0% 100% repeat;
+   width: 216px;
+}
+}
+
+.header__visit
+{
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	color:white;
+	width: 100%;
+	font-size: 1.3em;
+	margin-top: 5%;
+	animation: 3s infinite ease-in-out float;
+	position: absolute;
+	top: 90vh;
+	left: 0;
+}
