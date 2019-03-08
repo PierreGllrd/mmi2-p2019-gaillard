@@ -6,12 +6,14 @@
  font-family: "Coolvetica";
  src: url("./../police/coolvetica.ttf");
 }
+*{
+	box-sizing:border-box;
+}
 html,body{
 	scroll-behavior: smooth;
 }
 body{
 	font-size: 100%;
-	box-sizing:border-box;
 	width: 100vw;
 	font-family: "Coolvetica",sans-serif;
 	background-color: #BD2F2B;
