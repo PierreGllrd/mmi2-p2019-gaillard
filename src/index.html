@@ -8,14 +8,17 @@
   <title>Tacos Star</title>
   <link rel="stylesheet" href="./assets/scss/styles.scss">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script type="text/javascript" defer src="./assets/js/link_menu.js"></script>
 </head>
 <body>
+  <a class="burgermenu" href="#" id="a_burger" title="Menu Burger"><i class="fas fa-hamburger"></i></a>
   <header class="header">
-    <h1>Tacos  Star</h1>
+    <h1>Tacos Star</h1>
     <hr class="dots">
     <img src="./assets/img/diapo_tacos_1.jpg" alt="Diapo Tacos" class="diaporama__img">
     <img src="./assets/img/logo.png" alt="Logo de Tacos Star" class="header__logo">
-    <nav class="menu" style="display: none">
+    <nav id="menu" style="display: none">
+      <a class="burgermenu" href="#" id="a_burger2" title="Menu Burger"><i class="fas fa-hamburger"></i></a>
     	<ul>
     		<li><a href="#" title="Accéder à nos différents tacos">Nos Tacos</a></li>
     		<li><a href="#" title="Accéder à nos menus">Formule Menu</a></li>
@@ -23,11 +26,13 @@
     		<li><a href="#" title="Accéder à nos différents contacts">Contact</a></li>
     	</ul>
     </nav>
-    <a href="#" class="header__visit">
+    <a href="#tacos" class="header__visit">
     	<span class="visit__text">Visitez le site</span><br>
     	<i class="fas fa-sort-down"></i>
     </a>
-    
   </header>
+  <section id="tacos">
+  
+  </section>
 </body>
 </html>
