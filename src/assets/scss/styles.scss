@@ -32,7 +32,7 @@ body{
     margin-top:2%;
   }
   .header__logo{
-  	width: 55vw;
+  	width: 50vw;
   	height: auto;
   	animation:bounce 10s infinite;
   	animation-delay:1s;
@@ -43,8 +43,8 @@ body{
   }
   .diaporama__img
   {
-  	width: 90vw;
-  	height: auto;
+  	width: auto;
+  	height: 25vh;
   	margin-top: 5%;
   }
 
@@ -58,9 +58,9 @@ body{
 }
 
 @keyframes float{
-	from{top:90%;}
-	50%{top:95%;}
-	to{top:90%;}
+	from{top:85%;}
+	50%{top:90%;}
+	to{top:85%;}
 }
 
 hr:before, hr:after { content: ''; }
@@ -88,6 +88,6 @@ hr {
 	margin-top: 5%;
 	animation: 3s infinite ease-in-out float;
 	position: absolute;
-	top: 90%;
+	top: 85%;
 	left: 0;
 }
