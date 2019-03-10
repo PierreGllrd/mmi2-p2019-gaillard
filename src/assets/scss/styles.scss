@@ -40,8 +40,8 @@ body{
     margin-top:2%;
   }
   .header__logo{
-  	width: 50vw;
-  	height: auto;
+  	width: auto;
+  	height: 25vh;
   	animation:bounce 10s infinite;
   	animation-delay:1s;
   	margin-top: 12%;
@@ -96,11 +96,11 @@ hr {
 	margin-top: 5%;
 	animation: 3s infinite ease-in-out float;
 	position: absolute;
-	top: 85%;
+	top: 90%;
 	left: 0;
 }
 #tacos
-{ height: calc(100vh - var(--barre));
+{ 	height: calc(100vh - var(--barre));
 	width: 100%;
 	margin-top: var(--barre);
 }
