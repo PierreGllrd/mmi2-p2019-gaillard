@@ -114,7 +114,7 @@ hr {
 	a{
 		text-decoration: none;
 		color: white;
-		font-size: 2.5em;
+		font-size: 3em;
 	}
 }
 .burgermenu
@@ -173,7 +173,7 @@ hr {
 	height: 21%;
 	background-color: #701C1A;
 	margin-top: 5vh;
-	margin-bottom: 3vh;
+	margin-bottom: 2vh;
 	position: relative;
 	transition:1s;
 	transform:rotateY(0);
@@ -245,4 +245,68 @@ hr {
 		}
 	}
 	
+}
+#menurestaurant
+{
+	height: calc(100vh - var(--barre));
+	width: 100%;
+	text-align: center;
+	margin-top: 10vh;
+	color:black;
+	a{
+		text-decoration: none;
+		color: white;
+		font-size: 3em;
+	}
+	.menut
+	{
+		height: 18%;
+		width: 90%;
+		border-radius: 30px;
+		margin:8% auto;
+		border: 3px solid black;
+		background: no-repeat center/160% url('./../img/tacos1.png');
+		h3
+		{
+			margin: 0;
+		}
+		p
+		{
+			margin: 2%;
+		}
+		.tarif
+		{
+			font-size: 1.5em;
+			color:white;
+		}
+	}
+	.menu1, .menu2, .menu3, .menu4
+	{
+		height: 100%;
+		width: 100%;
+		border-radius: 30px;
+	}
+	.menu1{
+		background-color: rgba(lightblue, 0.4);
+	}
+	.menu2{
+		background-color: rgba(teal, 0.4);
+	}
+	.menu3{
+		background-color: rgba(coral,0.4);
+	}
+	.menu4{
+		background-color: rgba(brown,0.6);
+	}
+}
+#restaurant
+{
+	height: calc(100vh - var(--barre));
+	width: 100%;
+	margin-top: 10vh;
+	text-align: center;
+	h2{
+		font-family: Milestone,sans-serif;
+		font-size: 2em;
+	}
 }

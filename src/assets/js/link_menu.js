@@ -86,14 +86,14 @@ linktacos4.onclick = e =>{
 	turn4(0);
 }
 recette4.onclick = e =>{
-	setTimeout(function(){turn4(4);},604);
+	setTimeout(function(){turn4(4);},304);
 	}
 
 function turn4(num){
 	if (num == 0) {
 		setTimeout(function(){linktacos4.classList.add('go');},40);
 		setTimeout(function(){recette4.classList.add('go');},300);
-		setTimeout(function(){linktacos4.classList.add('none');},600);
+		setTimeout(function(){linktacos4.classList.add('none');},300);
 	}
 	else
 	{

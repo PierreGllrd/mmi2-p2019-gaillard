@@ -21,10 +21,10 @@
     <nav id="menu" style="display: none">
       <span class="burgermenu" href="#" id="a_burger2" title="Menu Burger"><i class="fas fa-hamburger"></i></span>
     	<ul>
-    		<li><a href="#tacos" title="Accéder à nos différents tacos">Nos Tacos</a></li>
-    		<li><a href="#menu" title="Accéder à nos menus">Formule Menu</a></li>
-    		<li><a href="#" title="Accéder à la description de notre restaurant">Notre Restaurant</a></li>
-    		<li><a href="#" title="Accéder à nos différents contacts">Contact</a></li>
+    		<li><a href="#tacos" onclick="menu.style.display = 'none';link1.style.display = 'block';" title="Accéder à nos différents tacos">Nos Tacos</a></li>
+    		<li><a href="#menurestaurant" onclick="menu.style.display = 'none';link1.style.display = 'block';" title="Accéder à nos menus">Formule Menu</a></li>
+    		<li><a href="#" onclick="menu.style.display = 'none';link1.style.display = 'block';" title="Accéder à la description de notre restaurant">Notre Restaurant</a></li>
+    		<li><a href="#" onclick="menu.style.display = 'none';link1.style.display = 'block';" title="Accéder à nos différents contacts">Contact</a></li>
     	</ul>
     </nav>
     <a href="#tacos" class="header__visit">
@@ -86,7 +86,7 @@
   			<img src="./assets/img/tacos4.png" alt="Gigatacos">
   		</div>
   		<hr>
-  		<span><b>Taille :</b> XL</span>
+  		<span><b>Taille :</b> XXL</span>
   		<p>Clique pour voir les ingrédients</p>
   		<div class="produit__back">
   			<h3>Ingredients:</h3>
@@ -94,7 +94,51 @@
   			<span class="back__prix">12€
   		</div>
   	</div>
-  	<a href="#menu"><i id="flechedown" class="fas fa-chevron-circle-down"></i></a>
+  	<a href="#menurestaurant"><i id="flechedown" class="fas fa-chevron-circle-down"></i></a>
   </section>
+  <section id="menurestaurant">
+  	<div class="menut">
+  		<div class="menu1">
+  			<h3>Menu Etudiant</h3>
+  			<p><b>1 tacos M</b> (au choix ou personnalisé) + frites + boisson</p>
+  			<span class="tarif">6€</span>
+  		</div>
+  	</div>
+  	<div class="menut">
+  		<div class="menu2">
+  			<h3>Menu L</h3>
+  			<p><b>1 tacos L</b> (au choix ou personnalisé) + frites + boisson</p>
+  			<span class="tarif">7€</span>
+  		</div>
+  	</div>
+  	<div class="menut">
+  		<div class="menu3">
+  			<h3>Menu XL</h3>
+  			<p><b>1 tacos XL</b> (au choix ou personnalisé) + frites + boisson</p>
+  			<span class="tarif">10€</span>
+  		</div>
+  	</div>
+  	<div class="menut">
+  		<div class="menu4">
+  			<h3>Menu FATacos</h3>
+  			<p><b>1 tacos XXL</b> (au choix ou personnalisé) + frites + boisson</p>
+  			<span class="tarif">15€</span>
+  		</div>
+  	</div>
+  	<a href="#restaurant"><i id="flechedown" class="fas fa-chevron-circle-down"></i></a>
+  </section>
+  <section id="restaurant">
+  	<h2>Notre restaurant</h2>
+  	<p>TACOS STAR a révolutionné le monde du TACOS, en le modernisant et en le rendant plus gourmand et raffiné.
+		Un concept novateur et efficace qui a déjà fait ses preuves, avec des établissements accueillants et chaleureux.
+		Des équipes dynamiques et attentives aux moindre détails pour fournir un produit d'exception à la hauteur de leur réputation.
+		Le tacos revisité à la française, une recette unique, qui les distingue et affirme leur identité.</p>
+	<img src="tacos.jpg" alt="Le restaurant">
+	<p>Venez tester notre enseigne et nos tacos maisons cuits au four, comprenant viandes sélectionnées et/ou poisson pané, ainsi 	que chakchuka, frites et sauces fromagère maison, sans compter les extras si vous êtes gourmands !!</p>
+
+  </section>
+  <script type="text/javascript">
+  	const link1 = document.getElementById('a_burger');
+  </script>
 </body>
 </html>
