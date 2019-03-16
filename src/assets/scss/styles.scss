@@ -303,10 +303,46 @@ hr {
 {
 	height: calc(100vh - var(--barre));
 	width: 100%;
-	margin-top: 10vh;
 	text-align: center;
 	h2{
 		font-family: Milestone,sans-serif;
 		font-size: 2em;
+	}
+	p{
+		width: 85%;
+		display: block;
+		margin:0 auto;
+		text-align: justify;
+	}
+	img
+	{
+		width: 85%;
+		height: auto;
+	}
+	a{
+		text-decoration: none;
+		color: white;
+		font-size: 3em;
+	}
+}
+#contact
+{
+	max-height: calc(100vh - var(--barre));
+	width: 100%;
+	margin-top: 10vh;
+	text-align: center;
+	#map
+	{
+		width: 80%;
+   		height: 50%;
+   		margin: 0 auto;
+	}
+	.footer
+	{
+		background-color: white;
+		border-top: 4px solid black;
+		margin-top: 5vh;
+		height: 100%;
+		color: black;
 	}
 }
