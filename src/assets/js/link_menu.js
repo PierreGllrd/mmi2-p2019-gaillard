@@ -13,10 +13,12 @@ const recette4 = document.getElementsByClassName('produit__back')[3];
 link1.onclick = e => {
 	menu.style.display = "block";
 	link1.style.display = "none";
+	setTimeout(function(){link2.classList.add("anim_menu");},10);
 }
 link2.onclick = e => {
 	menu.style.display = "none";
 	link1.style.display = "block";
+	link2.classList.remove("anim_menu");
 }
 
 linktacos1.onclick = e =>{
