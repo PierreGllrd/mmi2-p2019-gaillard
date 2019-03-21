@@ -1,0 +1,137 @@
+@media screen and (min-width: 640px) {
+	#menu
+		{
+			display: flex;
+			align-items:center;
+			background-color: white;
+			font-family: "Milestone",serif;
+			height: 10%;
+			padding-top: 2%;
+			top: -2%;
+			box-shadow: 5px 5px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+			li {
+				width: 100%;
+				transition:1s;
+				height: 100%;
+				display: flex;
+				justify-content:center;
+				align-items:center;
+			}
+			li:hover
+			{
+				background-color: #701C1A;
+				color:white;
+			}
+			ul
+			{
+				display: flex;
+				flex-direction:row;
+				justify-content:space-around;
+				height: 100%;
+				margin:0;
+				a
+				{
+					color: black;
+				}
+			}
+		}
+	.header
+	{	
+		padding-top: 8%;
+		height: 92vh;
+		h1
+		{
+			font-size: 5em;
+		}
+		.header__visit
+		{
+			bottom:5vh;
+			font-size: 1.5em;
+		}
+		.header__logo
+		{
+			height: 50%;
+			margin-top: 5%;
+			
+		}
+		.diaporama__img
+		{
+			display: none;
+		}
+	}
+	.burgermenu
+	{
+		display: none;
+	}
+	#tacos
+	{
+		padding-top: 8%;
+		height: 192vh;
+		display: grid;
+		font-size: 130%;
+		width: 100vw;
+		grid-template-rows:auto;
+		grid-template-columns: 50% 50%;
+		grid-template-areas:"head head" "tacos2 tacos3" "tacos4 tacos5" "link link";
+		@for $i from 2 through 5 {
+			.tacos__produit:nth-child(#{$i}) {
+				grid-area:tacos#{$i};
+				width: 90%;
+			}
+		}
+		h2
+		{
+			grid-area:head;
+			margin:0;
+			padding-top: 0;
+		}
+		.tacos__produit 
+		{	
+			height: 75vh;
+			.produit__image
+			{
+				img
+				{
+					width: 90%;
+					height: 90%;
+				}
+			}
+		}
+		
+	}
+	#menurestaurant
+	{
+		height: 100vh;
+		padding-top: 8%;
+		display: grid;
+		grid-template-rows:auto;
+		grid-template-columns: 50% 50%;
+		grid-template-areas:"head head" "menu2 menu3" "menu4 menu5" "link link";
+		justify-items:center;
+		@for $i from 2 through 5 {
+			.menut:nth-child(#{$i}) {
+				grid-area:menu#{$i};
+				width: 90%;
+				height: 80%;
+			}
+		}
+		h2
+		{
+			grid-area:head;
+			padding: 0;
+		}
+		a
+		{
+			grid-area:link;
+		}
+	}
+	#restaurant
+	{
+		height: 100vh;
+		padding-top: 12%;
+		img
+		{
+			width: 60%;
+		}
+	}
+}

@@ -1,5 +1,6 @@
+<!--AJOUT DES IMG SRCSET!!!!!!!!!!!!!!!!!!!!!!-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,13 +19,14 @@
     <hr class="dots">
     <img src="./assets/img/diapo_tacos_1.jpg" alt="Diapo Tacos" class="diaporama__img">
     <img src="./assets/img/logo.png" alt="Logo de Tacos Star" class="header__logo">
-    <nav id="menu" style="display: none">
+    <span class="slogan">Le tacos revisité à la française, une recette unique et de qualité</span>
+    <nav id="menu">
       <span class="burgermenu" href="#" id="a_burger2" title="Menu Burger"><i class="fas fa-times"></i></span>
     	<ul>
-    		<li><a href="#tacos" onclick="menu.style.display = 'none';link1.style.display = 'block';" title="Accéder à nos différents tacos">Nos Tacos</a></li>
-    		<li><a href="#menurestaurant" onclick="menu.style.display = 'none';link1.style.display = 'block';" title="Accéder à nos menus">Formule Menu</a></li>
-    		<li><a href="#restaurant" onclick="menu.style.display = 'none';link1.style.display = 'block';" title="Accéder à la description de notre restaurant">Notre Restaurant</a></li>
-    		<li><a href="#contact" onclick="menu.style.display = 'none';link1.style.display = 'block';" title="Accéder à nos différents contacts">Contact</a></li>
+    		<li><a href="#tacos" onclick="if(window.matchMedia('(max-width:640px)').matches) {menu.style.display = 'none';link1.style.display = 'block';}" title="Accéder à nos différents tacos">Nos Tacos</a></li>
+    		<li><a href="#menurestaurant" onclick="if(window.matchMedia('(max-width:640px)').matches) {menu.style.display = 'none';link1.style.display = 'block';}" title="Accéder à nos menus">Formule Menu</a></li>
+    		<li><a href="#restaurant" onclick="if(window.matchMedia('(max-width:640px)').matches) {menu.style.display = 'none';link1.style.display = 'block';}" title="Accéder à la description de notre restaurant">Notre Restaurant</a></li>
+    		<li><a href="#contact" onclick="if(window.matchMedia('(max-width:640px)').matches) {menu.style.display = 'none';link1.style.display = 'block';}" title="Accéder à nos différents contacts">Contact</a></li>
     	</ul>
     </nav>
     <a href="#tacos" class="header__visit">
