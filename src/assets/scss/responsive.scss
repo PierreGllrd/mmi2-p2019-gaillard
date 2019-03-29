@@ -1,4 +1,8 @@
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 640px) and (orientation:landscape), (min-width: 640px) {
+	::-webkit-scrollbar {
+    width: 12px;
+    margin-top: 10vh;
+}
 	#menu
 		{
 			display: flex;
@@ -38,7 +42,7 @@
 	.header
 	{	
 		padding-top: 8%;
-		height: 92vh;
+		height: 85vh;
 		h1
 		{
 			font-size: 5em;
@@ -58,6 +62,11 @@
 		{
 			display: none;
 		}
+		.slogan
+		  {
+		  	display: block;
+		  	padding-top: 3%;
+		  }
 	}
 	.burgermenu
 	{
@@ -108,11 +117,27 @@
 		grid-template-columns: 50% 50%;
 		grid-template-areas:"head head" "menu2 menu3" "menu4 menu5" "link link";
 		justify-items:center;
+		position: relative;
 		@for $i from 2 through 5 {
 			.menut:nth-child(#{$i}) {
 				grid-area:menu#{$i};
 				width: 90%;
 				height: 80%;
+				font-size: 150%;
+				transition:1s;
+				background: no-repeat center/110% url('./../img/tacos1.png');
+				&:hover
+					{
+						transform:scale(1.1);
+					}
+				.menu1,.menu2,.menu3,.menu4
+				{
+					display: flex;
+					justify-content:center;
+					align-items:center;
+					flex-direction:column;
+				}
+
 			}
 		}
 		h2
@@ -128,10 +153,107 @@
 	#restaurant
 	{
 		height: 100vh;
-		padding-top: 12%;
+		padding-top: 2%;
+		display: flex;
+		flex-direction:column;
+		justify-content:space-around;
+		align-items:center;
 		img
 		{
-			width: 60%;
+			width: 50%;
+		}
+	}
+	#contact
+	{
+		height: 90vh;
+		.contact__numero {
+			display: flex;
+			justify-content:space-around;
+			flex-direction:row;
+			width: 100%;
+			b
+			{
+				margin-left: 10%;
+			}
+			.footer
+			{
+				width: 100vw;
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width:640px) and (orientation:portrait), (min-width: 890px) {
+	.header
+	{
+		display: flex;
+		flex-direction:column;
+		justify-content:space-around;
+		margin-top: 5vh;
+		padding: 0;
+		.slogan
+		{
+			opacity: 0;
+		}
+	}
+	#tacos
+	{
+		padding-top: 12vh;
+		height: 100vh;
+		.tacos__produit
+		{
+			max-height: 30vh;
+			.produit__image
+			{
+				display: flex;
+				justify-content:center;
+				align-items:center;
+				overflow: hidden;
+				img
+					{
+						width: 70%;
+						height: auto;
+					}
+			}
+		}
+	}
+}
+@media screen and (min-width:890px) {
+	#contact
+	{
+		.contact__numero {
+			font-size: 2em;
+			width: 90%;
+			b{
+				margin-left: 4%;	
+			}
+			
+		}
+	}
+}
+@media screen and (min-width: 1000px)
+{
+	#tacos
+	{
+		.tacos__produit 
+		{	
+			span
+			{
+				display: none;
+			}
+			h3
+			{
+				padding-top: 0;
+			}
+			.produit__image
+			{
+				img
+				{
+					width: 35%;
+					height: auto;
+				}
+			}
 		}
 	}
 }
