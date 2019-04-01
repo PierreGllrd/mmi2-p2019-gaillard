@@ -17,6 +17,9 @@
   <script type="text/javascript" defer src="./assets/js/detect_browser.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script type="text/javascript" defer src="./assets/js/link_menu.js"></script>
+  <script type="text/javascript">
+    const link1 = document.getElementById('a_burger');
+  </script>
 </head>
 <body id="body">
   <span class="burgermenu" href="#" id="a_burger" title="Menu Burger"><i class="fas fa-hamburger"></i></span>
@@ -36,10 +39,10 @@
     <nav id="menu">
       <span class="burgermenu" href="#" id="a_burger2" title="Menu Burger"><i class="fas fa-times"></i></span>
     	<ul>
-    		<li><a href="#tacos" onclick="if(window.matchMedia('(max-width:640px)').matches) {menu.style.display = 'none';link1.style.display = 'block';}" title="Accéder à nos différents tacos">Nos Tacos</a></li>
-    		<li><a href="#menurestaurant" onclick="if(window.matchMedia('(max-width:640px)').matches) {menu.style.display = 'none';link1.style.display = 'block';}" title="Accéder à nos menus">Formule Menu</a></li>
-    		<li><a href="#restaurant" onclick="if(window.matchMedia('(max-width:640px)').matches) {menu.style.display = 'none';link1.style.display = 'block';}" title="Accéder à la description de notre restaurant">Notre Restaurant</a></li>
-    		<li><a href="#contact" onclick="if(window.matchMedia('(max-width:640px)').matches) {menu.style.display = 'none';link1.style.display = 'block';}" title="Accéder à nos différents contacts">Contact</a></li>
+    		<li><a href="#tacos" onclick="if(window.matchMedia('(max-width:640px)').matches) {menu.style.display = 'none'; link1.style.display = 'block';}" title="Accéder à nos différents tacos">Nos Tacos</a></li>
+    		<li><a href="#menurestaurant" onclick="if(window.matchMedia('(max-width:640px)').matches) {menu.style.display = 'none'; link1.style.display = 'block';}" title="Accéder à nos menus">Formule Menu</a></li>
+    		<li><a href="#restaurant" onclick="if(window.matchMedia('(max-width:640px)').matches) {menu.style.display = 'none'; link1.style.display = 'block';}" title="Accéder à la description de notre restaurant">Notre Restaurant</a></li>
+    		<li><a href="#contact" onclick="if(window.matchMedia('(max-width:640px)').matches) {menu.style.display = 'none'; link1.style.display = 'block';}" title="Accéder à nos différents contacts">Contact</a></li>
     	</ul>
     </nav>
     <a href="#tacos" class="header__visit">
@@ -184,8 +187,5 @@
   		<p>Tacos-Star 2019 © - Tous droits réservés - Mentions légales</p>
   	</div>
   </section>
-  <script type="text/javascript">
-  	const link1 = document.getElementById('a_burger');
-  </script>
 </body>
 </html>
